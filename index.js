@@ -1,39 +1,40 @@
-function scuberGreetingForFeet(ride){
+function scuberGreetingForFeet(ride = 900) {
+  let result;
+  if (ride <= 400) {
+    return "This one is on me!";
+  } else if (ride > 400 && ride < 2000) {
+    return "That will be twenty bucks.";
+  } else if (ride > 2000 && ride < 2500) {
+    return "I will gladly take your thirty bucks.";
+  } else if (ride > 2500) {
+    return "No can do.";
+  }
+  return result;
+}
+
+// ASSIGNMENT 2
+
+function ternaryCheckCity(city) {
   // Write your code here!
   let result;
-  if (ride <= 400){
-    result='This one is on me!'
-  }else if(ride>400 && ride<2000){
-     result='That will be twenty bucks.'
-  }else if(ride>2000 && ride<2500){
-    result='I will gladly take your thirty bucks.'
-  }else if(ride>2500) {
-    result='No can do.'
-  }
-  return result
+  city === "NYC" ? (result = "Ok, sounds good.") : (result = "No go.");
+
+  return result;
 }
 
-function ternaryCheckCity(city){
-  // Write your code here!
-let resultA
-city==='NYC'?(resultA="Ok, sounds good."):(resultA= "No go.")
+//ASSIGNMENT 3
 
-    return resultA  
-}
-
-function switchOnCharmFromTip(tip){
-  // Write your code here!
-  let resultB;
-
-  switch (tip){
-    case 'generous':
-    resultB="Thank you so much.";
-    break;
-    case 'not as generous':
-    resultB="Thank you.";
-    break;
+function switchOnCharmFromTip(tip) {
+  let results;
+  switch (tip) {
+    case "generous":
+      results = "Thank you so much.";
+      break;
+    case "not as generous":
+      results = "Thank you.";
+      break;
     default:
-      resultB="Bye.";
+      results = "Bye.";
   }
-  return resultB
+  return results;
 }
