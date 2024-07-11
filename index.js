@@ -12,12 +12,15 @@ function scuberGreetingForFeet(ride = 900) {
   return result;
 }
 
-// ASSIGNMENT 2
+// ASSIGNMENT 2 (TERNARY )
 
 function ternaryCheckCity(city) {
   // Write your code here!
-  let result;
-  city === "NYC" ? (result = "Ok, sounds good.") : (result = "No go.");
+  //let result;
+  // city === "NYC" ? (result = "Ok, sounds good.") : (result = "No go.");
+  // OR
+  let result =
+    city === "NYC" ? (result = "Ok, sounds good.") : (result = "No go.");
 
   return result;
 }
